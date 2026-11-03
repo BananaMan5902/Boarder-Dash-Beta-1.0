@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="hud">
+      <div class="stat">SCORE <span id="score">0</span></div>
+      <div class="stat">DOG TAGS <span id="coins">0</span></div>
+      <div class="stat">BEST <span id="best">0</span></div>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <div id="start-screen" class="screen">
+      <h1>BORDER DASH</h1>
+      <p>MILITARY TRAINING RUNNER</p>
+      <div class="soldier">🪖</div>
+      <button id="start-button">START MISSION</button>
+      <p class="instructions">
+        A / D or ← / → : Change lanes<br>
+        W or ↑ or SPACE : Jump<br>
+        S or ↓ : Slide
+      </p>
+    </div>
+
+    <div id="game-over" class="screen hidden">
+      <h1>MISSION FAILED</h1>
+      <p>You didn't make it through!</p>
+      <h2>FINAL SCORE: <span id="final-score">0</span></h2>
+      <button id="restart-button">TRY AGAIN</button>
+    </div>
+
+    <div id="mobile-controls">
+      <button id="left-button">◀</button>
+      <button id="jump-button">▲</button>
+      <button id="slide-button">▼</button>
+      <button id="right-button">▶</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
